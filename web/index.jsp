@@ -10,12 +10,23 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <!-- Boostrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     </head>
     <body>
-        <form name="registration" action="SaveUser" method="POST">
+    <form>
+        <fieldset class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="user_name" placeholder="Username">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" name="pass_word" placeholder="Password">
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+        <!-- <form name="registration" action="SaveUser" method="POST">
             
     First Name: <input type="text" name="user_name">
     <br>
@@ -25,8 +36,7 @@
     
     <input type="submit" value="Submit">
             
-        </form>
-        
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        </form> -->
+        <script src="js/bootstrap.js"></script>
     </body>
 </html>
