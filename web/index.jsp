@@ -14,7 +14,7 @@
     </head>
     <body>
   <div class="container">  
-    <form>
+      <form name="registration" action="SaveUser" method="POST">
         <fieldset class="form-group">
             <label for="username">Username</label>
             <input type="text" class="form-control" name="user_name" placeholder="Username">
@@ -27,18 +27,7 @@
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-   </div> 
-        <!-- <form name="registration" action="SaveUser" method="POST">
-            
-    First Name: <input type="text" name="user_name">
-    <br>
-    
-    Password: <input type="password" name="pass_word">
-    <br>
-    
-    <input type="submit" value="Submit">
-            
-        </form> -->
+   </div>
         <script src="js/bootstrap.js"></script>
     </body>
 </html>
