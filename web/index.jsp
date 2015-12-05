@@ -14,10 +14,10 @@
     <body>
         <form name="registration" action="SaveUser" method="POST">
             
-    First Name: <input type="text" value="" name="user_name">
+    First Name: <input type="text" name="user_name">
     <br>
     
-    Password: <input type="password" value="" name="pass_word">
+    Password: <input type="password" name="pass_word">
     <br>
     
     <input type="submit" value="Submit">
