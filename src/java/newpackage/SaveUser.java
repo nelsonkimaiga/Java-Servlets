@@ -19,6 +19,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -79,13 +80,26 @@ System.out.println("\nand the password is" +password);
      //save data
      String sql ="INSERT INTO login (username, password) VALUES ('" + username +"', '" + password +"')";
      st.execute(sql);
-     
+//      out.println("<h3>Saved succesfully!</h3>");
+JOptionPane.showConfirmDialog(null, "Saved");
+
      PreparedStatement prep =   conn.prepareStatement(sql);
      // Setting the values which we got from JSP form 
      prep.setString(1, username); 
      prep.setString(2, password); 
      prep.executeUpdate(); 
-     prep.close();    
+     prep.close();
+     
+     //form validation
+    if(username.equals("") && password.equals(""))
+    {
+      out.println("<h3>Empty fields!</h3>");
+    } 
+    else
+    {
+      out.println("<h3>Sorry, you are INVALID</h3>");
+    }
+     
     }   
     
     catch (Exception ex) {
